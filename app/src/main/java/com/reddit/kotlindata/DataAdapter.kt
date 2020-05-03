@@ -34,12 +34,7 @@ class DataAdapter(datalst: JSONArray, val clickListener:(JSONObject, Int) -> Uni
     override fun onBindViewHolder(holder: RedditViewHolder, position: Int) {
 
         var dataItem:JSONObject = dataList.get(position) as JSONObject
-
-        if(position == 0)
-        {
-            dataItem.getJSONObject("data").put("thumbnail","http://www.pilofficial.com/images/chimps2.jpg")
-        }
-
+        
         holder.populateData(dataItem);
         holder?.view?.setOnClickListener { clickListener(dataItem,position) }
     }
