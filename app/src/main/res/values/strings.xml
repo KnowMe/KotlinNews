@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Kotlin News</string>
+    <string name="server_url">https://www.reddit.com/r/kotlin/.json</string>
+    <string name="title_activity_detail">Detail View</string>
+</resources>
